@@ -12,7 +12,6 @@ var seenBtn = document.getElementById("seenBtn");
 var seenWords = [];
 var initialContainerHTML = document.querySelector(".container").innerHTML;
 var rank = 0;
-var german;
 
 // Generate a random word from the vocabulary array
 function getRandomWord() {
