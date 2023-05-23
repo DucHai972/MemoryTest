@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Memory Game</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Memory Game</h1>
+    <div id="score">Score: 0</div>
+    <div id="lives">Lives: 3</div>
+    <div id="word"></div>
+    <div id="options">
+      <button id="newBtn">New</button>
+      <button id="seenBtn">Seen</button>
+    </div>
+    <div id="gameOver" style="display: none;">
+      <p class="game-over">Game Over</p>
+      <img src="./img/statistic.png" alt="Chart" style="width: 300px; height: auto;">
+      <p class="game-over" id="finalScore"></p>
+      <button id="restartBtn">Restart</button>
+    </div>
+
+    <div id="languageOptions">
+      <button id="englishBtn">English</button>
+      <button id="germanBtn">Deutsch</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
