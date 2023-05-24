@@ -274,9 +274,16 @@ function initializeGame() {
         "memory", "dream", "imagination", "inspiration", "creativity", "innovation", "technology", "science", 
         "discovery", "invention", "health", "wellness", "medicine", "doctor", "nurse", "patient", "hospital", 
         "volunteer", "charity", "help", "support", "community", "environment", "sustainability", "planet", "world", 
-        "global", "peace", "love", "kindness", "compassion", "equality", "justice", "freedom", "democracy", 
+        "global", "peace", "love", "kindness", "compassion", "missionary", "equality", "justice", "freedom", "democracy", 
         "leadership", "success", "achievement", "challenge", "opportunity", "motivation", "perseverance", "teamwork", 
-        "communication", "listening", "empathy", "understanding", "respect", "tolerance"
+        "communication", "listening", "empathy", "understanding", "respect", "tolerance", "challenge", "solution", 
+        "strength", "positive", "exercise", "creative", "support", "analysis", "process", "account", "provide", "control", 
+        "patient", "message", "balance", "complex", "science", "picture", "wonder", "imagine", "network", "vortex", "quartz",
+        "jigsaw", "zealot", "mirthful", "cortex", "behoove", "brogue", "plinth", "guffaw", "fjord", "klaxon", "pyxides", "furbish", 
+        "guerdon", "czarist", "quandary", "zephyr", "ululate", "brolly", "glyptic", "comfort", "motive", "design", "wealth", "expect",
+        "demand", "follow", "result", "advice", "master", "belief", "memory", "chance", "simple", "growth", "moment", "invite", "legacy", "sudden", "remain", "strike",
+        "ability", "burden", "choice", "decade", "editor", "famous", "global", "height", "income", "jungle", "knight", "lesson", "moment", "number", "object", "people", 
+        "quirky", "reward", "sudden", "together", "straigher", "optimistic", "grateful", "disbelief", "intelligence", "rapidly"
     ];
       
   } else {
@@ -296,8 +303,33 @@ function initializeGame() {
         "Herausforderung", "Erfolg", "Fehler", "Lernen", "Wachstum", "Inspiration", "Kreativität", "Mut", 
         "Hoffnung", "Freiheit", "Freundschaft", "Liebe", "Vertrauen", "Respekt", "Gerechtigkeit", "Toleranz", 
         "Hilfe", "Zusammenarbeit", "Gemeinschaft", "Nachbar", "Recht", "Pflicht", "Verantwortung", "Ziel", 
-        "Leidenschaft", "Leben"
+        "Leidenschaft", "Leben", "beenden", "entdecken", "Geschichte", "verlassen", "schnell", "wunderbar", 
+        "glücklich", "schwierig", "erfolgreich", "leidenschaftlich", "geheimnisvoll", "wissenschaft", "schönheit", 
+        "gefährlich", "vergessen", "bekommen", "verändern", "Gesellschaft", "wichtig", "spielen", "entwickeln", "gefühle", 
+        "erfahrung", "vertrauen", "zusammen", "entscheiden", "freundschaft", "spannend", "wissen", "verantwortung", "interessant", 
+        "möglichkeit", "erinnerung", "lieblings", "überraschen", "schwester", "unglaublich", "unterricht", "lebensmittel", "hoffnung", 
+        "träumen", "herausforderung", "zufrieden", "entspannen", "weitermachen", "versuchen", "verstehen", "gelegenheit", "erfolg", "reise", 
+        "erzählen", "gefühle", "schön", "klar", "neu", "hell", "gut", "weit", "warm", "bald", "hart", "fest", "toll", "klug", "wild", "wahr", 
+        "frei", "satt", "laut", "mutig", "klug", "hart", "reif", "hoch", "dumm", "kalt", "knapp", "dicht", "klug", "dank", "stark", "rein", "schön", 
+        "ganz", "hell", "schwach", "alt", "süß", "echt", "gleich", "voll", "spät", "heiß", "scharf", "klug", "dunkel", "leer", "glatt", "fern", "dicht", 
+        "falsch", "leer", "klug", "dank", "stark", "rein", "schön", "ganz", "hell", "schwach", "alt", "süß", "echt", "gleich", "voll", "spät", 
+        "heiß", "scharf", "klug", "dunkel", "leer", "glatt", "fern", "dicht", "falsch", "leer", "bunt", "eng", "frech", "glück", "klug", "nett", 
+        "ruhig", "satt", "weit", "klar", "hart", "wild", "laut", "schön", "mutig", "klug", "gut", "weit", "warm", "bald", "fest", "toll", "klug", 
+        "wahr", "frei", "neu", "grün", "blau", "gelb", "schön", "klug", "dankbar", "mutig", "scharf", "leer", "laut", "hoch", "groß", "weich", 
+        "sauer", "frech", "lange", "bunt", "engel", "fleiß", "satt", "traum", "liebe", "stark", "ruhig", "freud", "junge", "weite", "klare", 
+        "schön", "reizvoll", "voller", "lustig", "dunkel", "klug", "große", "ruhig", "frohe", "reine", "süße", "gefährlich", "sanft", "fröhlich",
+        "still", "herz", "sorge", "lange", "sicher", "leben", "stolz", "ernst", "ruhig", "sauber", "voll", "leben", "ruhe", "falle", "ruhe", "ehre", 
+        "eisig", "schwach", "alt", "hell", "wertvoll", "freudig", "eigen", "engel", "klug", "froh", "sonne", "klug", "reizend", "freud", "warm", "helle", 
+        "falle", "glatt", "treu", "reich", "herz", "dankbar", "kluge", "dicht", "warme", "schlau", "junge", "satt", "frisch", "frech", "scharf", "mutig", 
+        "freie", "kluge", "heiter", "mutig", "süße", "harte", "rein", "junge", "leise", "klare", "helle", "süße", "kluge", "grün", "blau", "gelb", 
+        "schön", "klug", "dankbar", "mutig", "scharf", "leer", "laut", "hoch", "groß", "weich", "sauer", "frech", "lange", "bunt", "engel", "fleiß", 
+        "satt", "traum", "liebe", "stark", "ruhig", "freud", "junge", "weite", "klare", "schön", "reizvoll", "voller", "lustig", "dunkel", "klug", "große", 
+        "ruhig", "frohe", "reine", "süße", "gefährlich", "sanft", "fröhlich", "still", "herz", "sorge", "lange", "sicher", "leben", "stolz", "ernst", "ruhig", 
+        "sauber", "voll", "leben", "ruhe", "falle", "ruhe", "ehre", "eisig", "schwach", "alt", "hell", "wertvoll", "freudig", "eigen", "engel", "klug", "froh", 
+        "sonne", "klug", "reizend", "freud", "warm", "helle", "falle", "glatt", "treu", "reich", "herz", "dankbar", "kluge", "dicht", "warme", "schlau", "junge", 
+        "satt", "frisch", "frech", "scharf", "mutig", "freie", "kluge", "heiter", "mutig", "süße", "harte", "rein", "junge", "leise", "klare", "helle", "süße", "kluge", "stolz"
     ];
+      
   }
 
   // Update the word immediately
