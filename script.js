@@ -70,21 +70,21 @@ function endGame() {
     } else if (score < 30)  {
         rank = 20 + (1.25 * (score - 20));
     } else if (score < 40)  {
-        rank =  31.25 + (1.2 * score - 30);
+        rank =  31.25 + (1.2 * (score - 30));
     } else if (score < 50)  {
-        rank = 42.05 + (1.25 * score - 40);
+        rank = 42.05 + (1.25 * (score - 40));
     } else if (score < 60)  {
-        rank = 53.3 + (1.3 * score - 50);
+        rank = 53.3 + (1.3 * (score - 50));
     } else if (score < 100)  {
-        rank = 65 + (0.43 * score - 60);
+        rank = 65 + (0.43 * (score - 60));
     } else if (score < 120)  {
-        rank = 80 + (0.62 * score - 100);
+        rank = 80 + (0.62 * (score - 100));
     } else if (score < 135)  {
-        rank = 92 + (0.44 * score - 120);
+        rank = 92 + (0.44 * (score - 120));
     } else if (score < 220)  {
-        rank = 98.6 + (0.015 * score - 135);
+        rank = 98.6 + (0.015 * (score - 135));
     } else
-        rank = 99.9 + (0.0015 * score - 220);
+        rank = 99.9 + (0.0015 * (score - 220));
 
     if (rank >= 100)
         rank = 100;
